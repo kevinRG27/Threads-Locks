@@ -1,0 +1,27 @@
+<H2>IMPLEMENTACIÓN DE LOCKS</H2>
+<p>1. Lock implementado utilizando la función atómica Fetch and Add (Ticket)</p>
+<p>2. Lock implementado utilizando la función atómica Yield (Cola)</p>
+<select #type>
+    <option >------</option>
+    <option >ticket</option>
+    <option >cola</option>
+</select>
+<form action="/my-handling-form-page" method="post">
+    <ul>
+        <li>
+            <label >Threads:</label>
+            <input type="text" name="num_threads">
+        </li> 
+        <li>
+            <label >Interrupt Frequency:</label>
+            <input type="text" name="Freq_Inter">
+        </li> 
+        <li>
+            <label >Size of Address Space (KB):</label>
+            <input type="text" name="size_address">
+        </li> 
+        <li>
+            <button (click)='asignar(type.value)'>SIMULAR</button>
+        </li>
+    </ul>
+</form>
