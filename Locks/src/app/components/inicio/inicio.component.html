@@ -1,27 +1,42 @@
-<H2>IMPLEMENTACIÓN DE LOCKS</H2>
-<p>1. Lock implementado utilizando la función atómica Fetch and Add (Ticket)</p>
-<p>2. Lock implementado utilizando la función atómica Yield (Cola)</p>
-<select #type>
-    <option >------</option>
-    <option >ticket</option>
-    <option >cola</option>
-</select>
-<form action="/my-handling-form-page" method="post">
-    <ul>
-        <li>
-            <label >Threads:</label>
-            <input type="text" name="num_threads">
-        </li> 
-        <li>
-            <label >Interrupt Frequency:</label>
-            <input type="text" name="Freq_Inter">
-        </li> 
-        <li>
-            <label >Size of Address Space (KB):</label>
-            <input type="text" name="size_address">
-        </li> 
-        <li>
-            <button (click)='asignar(type.value)'>SIMULAR</button>
-        </li>
-    </ul>
+<div class="global-container">
+
+       
+            <H2>IMPLEMENTACIÓN DE LOCKS</H2>
+            <p>1. Lock implementado utilizando la función atómica Fetch and Add (Ticket)</p>
+            <p id="texto-">2. Lock implementado utilizando la función atómica Yield (Cola)</p>
+       
+    <form action="/my-handling-form-page" method="post"> 
+     
+    <div class="container-center">
+        <div>
+            <select #type>
+                <option class="selector">Implementación</option>
+                <option class="selector">ticket</option>
+                <option class="selector">cola</option>
+            </select>
+        </div>
+        
+        <div>
+                <div>
+                    <div class="container-child"> 
+                        <div class="child-threads">
+                            <label >Threads:</label>
+                            <input type="text" class="inputs" name="num_threads">
+                        </div>
+                        <div>
+                            <label >Interrupt Frequency:</label>
+                            <input type="text" class="inputs" name="Freq_Inter">
+                        </div>
+                    </div>
+
+                    <div class="child-">
+                        <label >Size of Address Space (KB):</label>
+                        <input type="text" class="inputs" name="size_address">
+                    </div>
+                </div>
+        </div>
+    </div>    
+    <div class="child-" id="btn-s">
+        <button class="button_s" (click)='asignar(type.value)'>SIMULAR</button>
+    </div>
 </form>

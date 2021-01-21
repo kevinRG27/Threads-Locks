@@ -1,0 +1,60 @@
+#texto- {
+    margin-bottom: 80px;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.selector {
+    font-size: 1em;
+    height: 40px;
+    font-weight: bolder;
+}
+
+.inputs {
+    width: 5em;
+    border: 2px solid rgb(8, 8, 8);
+}
+p {
+    font-size: 1em;
+    text-align: center;
+}
+
+.global-container{
+    height: 580px;
+    background-color: rgb(124, 204, 236);
+    font-size: larger;
+}
+
+.container-center {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-child {
+    display: flex;
+    justify-content: space-evenly;
+    height: 130px;
+}
+
+.child- {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.child-threads {
+    margin-right: 70px;
+}
+
+.button_s {
+    font-weight: bold;
+    font-size: larger;
+}

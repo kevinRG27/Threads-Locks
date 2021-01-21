@@ -1,17 +1,50 @@
-<h1>QUEUE-LOCKS</h1>
-<p>AQUI IRÍA LA CUADRICULA DE ARRIBA</p>
-<form action="/my-handling-form-page" >
-    <ul>
-        <li>
-            <label >Current Turn:</label>
-            <button>00</button>
-        </li> 
-        <li>
-            <label >Threads Executed</label>
-            <input type="text" name="Freq_Inter">
-        </li> 
-        <li>
-            <button>END</button>
-        </li>
-    </ul>
-</form>
+
+
+<div class="t-header">
+    <h1>QUEUE-LOCKS</h1>
+    <div>
+        <p id="enturno">T0 | T1 | T2 | T3 | T4 | T5 | T6 | T7 | ....</p>
+    </div>    
+    <form action="/my-handling-form-page" >
+        
+            <div class="child_">
+                <div>
+                    <div id="mostrador">
+                        <label class="letras">Current Turn:</label>
+                        <button class="letras" id="btn_turn">00</button>
+                    </div>
+
+                    <div class="botones">
+                        <button id="btn_on">ON</button>
+                        <button id="btn_off">OFF</button>
+                    </div>
+                </div>
+
+                <div class="t-exec">
+                    <div >
+                        <p >Threads Executed</p>
+                        <p>T1 | T2 | T3 | T4 |.....| TN</p>
+                    </div>
+
+                    <div>
+                        <select #type>
+                            <option class="selector">Thread x</option>
+                            <option class="selector">Instruction 1</option>
+                            <option class="selector">Instruction 2</option>
+                            <option class="selector">Instruction 3</option>
+                            <option class="selector">Instruction 4</option>
+                            <option class="selector">Instruction 5</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn_end">
+                <button>END</button>
+            </div>
+
+        
+           
+        
+    </form>
+</div>
